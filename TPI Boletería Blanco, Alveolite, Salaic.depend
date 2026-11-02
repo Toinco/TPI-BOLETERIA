@@ -197,3 +197,212 @@
 	"MenuPrecios.h"
 	"ArchivoPrecios.h"
 
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivodirectores.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoDirectores.h"
+
+1793186792 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivodirectores.h
+	<string>
+	"Director.h"
+
+1793186792 c:\users\felipe guillermo\documents\github\tpi-boleteria\director.h
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivogeneros.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoGeneros.h"
+
+1793190357 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivogeneros.h
+	<string>
+	"Genero.h"
+
+1793186792 c:\users\felipe guillermo\documents\github\tpi-boleteria\genero.h
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivopeliculas.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoPeliculas.h"
+
+1793186792 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivopeliculas.h
+	<string>
+	"Pelicula.h"
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\pelicula.h
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivopeliculasxgenero.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoPeliculasxGenero.h"
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivopeliculasxgenero.h
+	<string>
+	"PeliculaxGenero.h"
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\peliculaxgenero.h
+
+1793635463 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivoprecios.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoPrecios.h"
+	<cstring>
+
+1793635463 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivoprecios.h
+	"Precio.h"
+
+1793630416 c:\users\felipe guillermo\documents\github\tpi-boleteria\precio.h
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\director.cpp
+	<iostream>
+	<cstring>
+	"Director.h"
+	"FuncionesGlobales.h"
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\funcionesglobales.h
+
+1793305210 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	"FuncionesGlobales.h"
+
+1793305166 c:\users\felipe guillermo\documents\github\tpi-boleteria\fecha.h
+
+1793304017 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\funcion.cpp
+	<iostream>
+	"Funcion.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+
+1793302838 c:\users\felipe guillermo\documents\github\tpi-boleteria\funcion.h
+	"Fecha.h"
+	"Horario.h"
+
+1793285389 c:\users\felipe guillermo\documents\github\tpi-boleteria\horario.h
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\validaciones.h
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\funcionesglobales.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	<cstdlib>
+	"FuncionesGlobales.h"
+
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\genero.cpp
+	<iostream>
+	<cstring>
+	"Genero.h"
+	"FuncionesGlobales.h"
+
+1793299392 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\horario.cpp
+	<iostream>
+	"Horario.h"
+	"FuncionesGlobales.h"
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\listadosyconsultas.cpp
+	<iostream>
+	<cstdlib>
+	"ListadosYConsultas.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoPeliculas.h"
+	"ArchivoDirectores.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\listadosyconsultas.h
+	"Pelicula.h"
+	"Director.h"
+
+1793635610 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"FuncionesGlobales.h"
+	"MenuPeliculas.h"
+	"MenuDirectores.h"
+	"MenuGeneros.h"
+	"ListadosYConsultas.h"
+	"MenuConfiguracion.h"
+	"MenuPrecios.h"
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\menupeliculas.h
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\menudirectores.h
+
+1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\menugeneros.h
+
+1793186792 c:\users\felipe guillermo\documents\github\tpi-boleteria\menuconfiguracion.h
+	<cstdio>
+
+1793635463 c:\users\felipe guillermo\documents\github\tpi-boleteria\menuprecios.h
+	"ArchivoPrecios.h"
+	"Precio.h"
+
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\menuconfiguracion.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	"MenuConfiguracion.h"
+	"FuncionesGlobales.h"
+	"ArchivoPeliculas.h"
+	"ArchivoDirectores.h"
+	"ArchivoGeneros.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\menudirectores.cpp
+	<iostream>
+	<cstdlib>
+	"MenuDirectores.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoDirectores.h"
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\menugeneros.cpp
+	<iostream>
+	<cstdlib>
+	"MenuGeneros.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoGeneros.h"
+
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\menupeliculas.cpp
+	<iostream>
+	<cstdlib>
+	"MenuPeliculas.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoPeliculas.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793635463 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\menuprecios.cpp
+	<iostream>
+	"MenuPrecios.h"
+	"ArchivoPrecios.h"
+
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\pelicula.cpp
+	<iostream>
+	<cstring>
+	"Pelicula.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+
+1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\peliculaxgenero.cpp
+	<iostream>
+	"PeliculaxGenero.h"
+	"Validaciones.h"
+
+1793634525 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\precio.cpp
+	<iostream>
+	<cstring>
+	"Precio.h"
+
+1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\validaciones.cpp
+	<iostream>
+	"Validaciones.h"
+	"FuncionesGlobales.h"
+	"ArchivoPeliculas.h"
+	"ArchivoDirectores.h"
+	"ArchivoGeneros.h"
+	"ArchivoPeliculasxGenero.h"
+
