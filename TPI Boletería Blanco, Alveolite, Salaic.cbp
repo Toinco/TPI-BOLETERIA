@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TPI Boletería Blanco, Alveolite, Salaic" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TPI Boletería Blanco, Alveolite, Salaic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TPI Boletería Blanco, Alveolite, Salaic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ArchivoDirectores.cpp" />
+		<Unit filename="ArchivoDirectores.h" />
+		<Unit filename="ArchivoGeneros.cpp" />
+		<Unit filename="ArchivoGeneros.h" />
+		<Unit filename="ArchivoPeliculas.cpp" />
+		<Unit filename="ArchivoPeliculas.h" />
+		<Unit filename="ArchivoPeliculasxGenero.cpp" />
+		<Unit filename="ArchivoPeliculasxGenero.h" />
+		<Unit filename="ArchivoPrecios.cpp" />
+		<Unit filename="ArchivoPrecios.h" />
+		<Unit filename="Director.cpp" />
+		<Unit filename="Director.h" />
+		<Unit filename="Fecha.cpp" />
+		<Unit filename="Fecha.h" />
+		<Unit filename="Funcion.cpp" />
+		<Unit filename="Funcion.h" />
+		<Unit filename="FuncionesGlobales.cpp" />
+		<Unit filename="FuncionesGlobales.h" />
+		<Unit filename="Genero.cpp" />
+		<Unit filename="Genero.h" />
+		<Unit filename="Horario.cpp" />
+		<Unit filename="Horario.h" />
+		<Unit filename="ListadosYConsultas.cpp" />
+		<Unit filename="ListadosYConsultas.h" />
+		<Unit filename="MenuConfiguracion.cpp" />
+		<Unit filename="MenuConfiguracion.h" />
+		<Unit filename="MenuDirectores.cpp" />
+		<Unit filename="MenuDirectores.h" />
+		<Unit filename="MenuGeneros.cpp" />
+		<Unit filename="MenuGeneros.h" />
+		<Unit filename="MenuPeliculas.cpp" />
+		<Unit filename="MenuPeliculas.h" />
+		<Unit filename="MenuPrecios.cpp" />
+		<Unit filename="MenuPrecios.h" />
+		<Unit filename="Pelicula.cpp" />
+		<Unit filename="Pelicula.h" />
+		<Unit filename="PeliculaxGenero.cpp" />
+		<Unit filename="PeliculaxGenero.h" />
+		<Unit filename="Precio.cpp" />
+		<Unit filename="Precio.h" />
+		<Unit filename="TPI Boletería Blanco, Alveolite, Salaic.cbp" />
+		<Unit filename="Validaciones.cpp" />
+		<Unit filename="Validaciones.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

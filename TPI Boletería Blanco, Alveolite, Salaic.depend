@@ -1,0 +1,199 @@
+# depslib dependency file v1.0
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivodirectores.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoDirectores.h"
+
+1793186792 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivodirectores.h
+	<string>
+	"Director.h"
+
+1793186792 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\director.h
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivogeneros.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoGeneros.h"
+
+1793190357 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivogeneros.h
+	<string>
+	"Genero.h"
+
+1793186792 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\genero.h
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivopeliculas.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoPeliculas.h"
+
+1793186792 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivopeliculas.h
+	<string>
+	"Pelicula.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\pelicula.h
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivopeliculasxgenero.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoPeliculasxGenero.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivopeliculasxgenero.h
+	<string>
+	"PeliculaxGenero.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\peliculaxgenero.h
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\director.cpp
+	<iostream>
+	<cstring>
+	"Director.h"
+	"FuncionesGlobales.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\funcionesglobales.h
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\funcionesglobales.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	<cstdlib>
+	"FuncionesGlobales.h"
+
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\genero.cpp
+	<iostream>
+	<cstring>
+	"Genero.h"
+	"FuncionesGlobales.h"
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\listadosyconsultas.cpp
+	<iostream>
+	<cstdlib>
+	"ListadosYConsultas.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoPeliculas.h"
+	"ArchivoDirectores.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\listadosyconsultas.h
+	"Pelicula.h"
+	"Director.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\validaciones.h
+
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menuconfiguracion.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	"MenuConfiguracion.h"
+	"FuncionesGlobales.h"
+	"ArchivoPeliculas.h"
+	"ArchivoDirectores.h"
+	"ArchivoGeneros.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793186792 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menuconfiguracion.h
+	<cstdio>
+
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menudirectores.cpp
+	<iostream>
+	<cstdlib>
+	"MenuDirectores.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoDirectores.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menudirectores.h
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menugeneros.cpp
+	<iostream>
+	<cstdlib>
+	"MenuGeneros.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoGeneros.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menugeneros.h
+
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menupeliculas.cpp
+	<iostream>
+	<cstdlib>
+	"MenuPeliculas.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoPeliculas.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793186793 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menupeliculas.h
+
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\pelicula.cpp
+	<iostream>
+	<cstring>
+	"Pelicula.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+
+1793186793 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\peliculaxgenero.cpp
+	<iostream>
+	"PeliculaxGenero.h"
+	"Validaciones.h"
+
+1793186792 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\validaciones.cpp
+	<iostream>
+	"Validaciones.h"
+	"FuncionesGlobales.h"
+	"ArchivoPeliculas.h"
+	"ArchivoDirectores.h"
+	"ArchivoGeneros.h"
+	"ArchivoPeliculasxGenero.h"
+
+1793305210 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	"FuncionesGlobales.h"
+
+1793305166 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\fecha.h
+
+1793304017 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\funcion.cpp
+	<iostream>
+	"Funcion.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+
+1793302838 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\funcion.h
+	"Fecha.h"
+	"Horario.h"
+
+1793285389 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\horario.h
+
+1793299392 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\horario.cpp
+	<iostream>
+	"Horario.h"
+	"FuncionesGlobales.h"
+
+1793635610 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"FuncionesGlobales.h"
+	"MenuPeliculas.h"
+	"MenuDirectores.h"
+	"MenuGeneros.h"
+	"ListadosYConsultas.h"
+	"MenuConfiguracion.h"
+	"MenuPrecios.h"
+
+1793635463 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menuprecios.h
+	"ArchivoPrecios.h"
+	"Precio.h"
+
+1793635463 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\archivoprecios.h
+	"Precio.h"
+
+1793630416 c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\precio.h
+
+1793635463 source:c:\users\felipe guillermo\desktop\programación ii\tpi boletería blanco, alveolite, salaic\menuprecios.cpp
+	<iostream>
+	"MenuPrecios.h"
+	"ArchivoPrecios.h"
+

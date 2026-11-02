@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Horario.h"
  using namespace std;
 
 #include "Horario.h"

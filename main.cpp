@@ -6,16 +6,9 @@
 /// director y la configuracion) ya funcionan. Las demas muestran un
 /// aviso hasta que se sumen los bloques 2 y 3.
 
-
-//g++ *.cpp -o pepe
-// ./pepe
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-
-const std::string AZUL = "\033[34m";
-const std::string RESET = "\033[0m";
 
 using namespace std;
 
@@ -25,7 +18,7 @@ using namespace std;
 #include "MenuGeneros.h"
 #include "ListadosYConsultas.h"
 #include "MenuConfiguracion.h"
-
+#include "MenuPrecios.h"
 void menuListados();
 void menuConsultas();
 void menuInformes();
@@ -45,7 +38,7 @@ int main(){
         cout<<"OPERACION"<<endl;
         cout<<"  7 - VENTA DE ENTRADAS"<<endl;
         lineaSimple();
-        cout<< AZUL << "SALIDAS"<< RESET << endl;
+        cout<<"SALIDAS"<<endl;
         cout<<"  8 - LISTADOS   9 - CONSULTAS   10 - INFORMES"<<endl;
         lineaSimple();
         cout<<" 11 - CONFIGURACION"<<endl;
@@ -57,7 +50,7 @@ int main(){
             case 1: menuPeliculas(); break;
             case 2: menuDirectores(); break;
             case 3: menuGeneros(); break;
-            case 4:
+            case 4:menuPrecios(); break;
             case 5:
             case 6: opcionPendiente(2); break;
             case 7: opcionPendiente(3); break;

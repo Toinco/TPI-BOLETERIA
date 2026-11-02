@@ -1,26 +1,26 @@
 #ifndef HORARIO_H_INCLUDED
 #define HORARIO_H_INCLUDED
 
-class Horario {
-protected:
-int hora, minuto;
+class Horario{
+    private:
+        int hora;
+    int minuto;
+
+    public:
+        Horario();
+
+          int getHora();
+        int getMinuto();
+
+        void setHora(int h);
+        void setMinuto(int m);
+
+        void cargar();
+        void mostrar();
 
 
-
-
-public:
-    void sethora (int h = 0);
-    void setminuto (int m = 0);
-
-
-
-
-
-
+          int aMinutos();
 };
-
-
-
 
 
 
