@@ -17,8 +17,8 @@ public:
 int getIdSala();
     const char* getNombre();
     int getCapacidad();
-    int getTipo();
-    bool getEliminado();
+    int getTipo(); /// 1 - IMAX, 2 - 3D, 3 - 2D, 4 - 4D
+    bool getEliminado(); /// false = activa, true = dada de baja
 
 
 void setIdSala(int id);
