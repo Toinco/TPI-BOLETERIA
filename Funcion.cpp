@@ -65,12 +65,7 @@ void Funcion::setEliminado(bool e){
 void Funcion::cargar() {
     idPelicula = pedirIdPeliculaActiva();
 
-    ArchivoSalas archSalas;
-    idSala = leerEntero("ID de la sala: ");
-    while (idSala <= 0 || archSalas.buscarID(idSala) == -1) {
-        cout << "El ID de la sala no existe o es invalido. Ingrese uno existente: " << endl;
-        idSala = leerEntero("ID de la sala: ");
-    }
+    idSala = pedirIdSalaActiva();
 /// ------------------
 
     cout<<"FECHA DE LA FUNCION" <<endl;

@@ -1,6 +1,6 @@
 #ifndef VALIDACIONES_H_INCLUDED
 #define VALIDACIONES_H_INCLUDED
-
+#include "Funcion.h"
 /// Existe en el archivo y no esta dado de baja
 bool existeDirectorActivo(int idDirector);
 bool existePeliculaActiva(int idPelicula);
@@ -29,6 +29,17 @@ void mostrarNombreGenero(int idGenero);
 /// Integridad para las bajas
 bool directorTienePeliculasActivas(int idDirector);
 bool generoTienePeliculasActivas(int idGenero);
-bool peliculaTieneFuncionesFuturas(int idPelicula);   /// la completa el bloque 2
+
+/// Bloque 2: salas y funciones
+bool existeSalaActiva(int idSala);
+int contarSalasActivas();
+void listarSalasParaElegir();
+int pedirIdSalaActiva();
+bool funcionVencida(Funcion f);
+bool salaTieneFuncionesFuturas(int idSala);
+
+
+
+
 
 #endif // VALIDACIONES_H_INCLUDED

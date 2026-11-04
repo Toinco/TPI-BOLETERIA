@@ -1,14 +1,15 @@
 #include <iostream>
 
 using namespace std;
-
+#include "ArchivoSalas.h"
+#include "ArchivoFunciones.h"
 #include "Validaciones.h"
 #include "FuncionesGlobales.h"
 #include "ArchivoPeliculas.h"
 #include "ArchivoDirectores.h"
 #include "ArchivoGeneros.h"
 #include "ArchivoPeliculasxGenero.h"
-
+#include <ctime>
 /// ---------------------------------------------------------------
 /// Existe y esta activo
 /// ---------------------------------------------------------------
@@ -221,12 +222,95 @@ bool generoTienePeliculasActivas(int idGenero){
     return false;
 }
 
-/// *** LA COMPLETA EL BLOQUE 2 ***
-/// El informe pide que no se pueda dar de baja una pelicula que tenga
-/// funciones futuras activas. Las funciones son del bloque 2, asi que
-/// ellos tienen que recorrer Funciones.dat y devolver true si hay una
-/// funcion no eliminada de esta pelicula con fecha y horario que todavia
-/// no pasaron. Mientras tanto devuelve false y la baja funciona igual.
+/// ---------------------------------------------------------------
+/// Bloque 2: salas y funciones
+/// ---------------------------------------------------------------
+
+bool existeSalaActiva(int idSala){
+    ArchivoSalas archivo;
+    int posicion=archivo.Buscar(idSala);
+    if(posicion==-1){
+        return false;
+    }
+    Sala reg=archivo.Leer(posicion);
+    return !reg.getEliminado();
+}
+
+int contarSalasActivas(){
+    ArchivoSalas archivo;
+    int cantidad=0;
+    int total=archivo.CantidadRegistros();
+    for(int i=0;i<total;i++){
+        Sala reg=archivo.Leer(i);
+        if(!reg.getEliminado()){
+            cantidad++;
+        }
+    }
+    return cantidad;
+}
+
+void listarSalasParaElegir(){
+    ArchivoSalas archivo;
+    int total=archivo.CantidadRegistros();
+    cout<<"SALAS:"<<endl;
+    for(int i=0;i<total;i++){
+        Sala reg=archivo.Leer(i);
+        if(!reg.getEliminado()){
+            cout<<"  "<<reg.getIdSala()<<" - "<<reg.getNombre()
+                <<" ("<<reg.getCapacidad()<<" butacas)"<<endl;
+        }
+    }
+}
+
+int pedirIdSalaActiva(){
+    listarSalasParaElegir();
+    int id=leerEntero("ID DE LA SALA: ");
+    while(!existeSalaActiva(id)){
+        cout<<"  Esa sala no existe o esta dada de baja."<<endl;
+        id=leerEntero("ID DE LA SALA: ");
+    }
+    return id;
+}
+
+/// Una funcion esta vencida si su fecha y horario ya pasaron
+bool funcionVencida(Funcion f){
+    time_t t=time(NULL);
+    tm *ahora=localtime(&t);
+    int hoy=(ahora->tm_year+1900)*10000+(ahora->tm_mon+1)*100+ahora->tm_mday;
+    int minutosAhora=ahora->tm_hour*60+ahora->tm_min;
+
+    Fecha fecha=f.getFecha();
+    Horario horario=f.getHorario();
+
+    if(fecha.aNumero()<hoy){
+        return true;
+    }
+    if(fecha.aNumero()==hoy && horario.aMinutos()<minutosAhora){
+        return true;
+    }
+    return false;
+}
+
 bool peliculaTieneFuncionesFuturas(int idPelicula){
+    ArchivoFunciones archivo;
+    int total=archivo.CantidadRegistros();
+    for(int i=0;i<total;i++){
+        Funcion reg=archivo.Leer(i);
+        if(!reg.getEliminado() && reg.getIdPelicula()==idPelicula && !funcionVencida(reg)){
+            return true;
+        }
+    }
+    return false;
+}
+
+bool salaTieneFuncionesFuturas(int idSala){
+    ArchivoFunciones archivo;
+    int total=archivo.CantidadRegistros();
+    for(int i=0;i<total;i++){
+        Funcion reg=archivo.Leer(i);
+        if(!reg.getEliminado() && reg.getIdSala()==idSala && !funcionVencida(reg)){
+            return true;
+        }
+    }
     return false;
 }

@@ -19,6 +19,8 @@ using namespace std;
 #include "ListadosYConsultas.h"
 #include "MenuConfiguracion.h"
 #include "MenuPrecios.h"
+#include "MenuSalas.h"
+#include "MenuFunciones.h"
 void menuListados();
 void menuConsultas();
 void menuInformes();
@@ -51,8 +53,8 @@ int main(){
             case 2: menuDirectores(); break;
             case 3: menuGeneros(); break;
             case 4:menuPrecios(); break;
-            case 5:
-            case 6: opcionPendiente(2); break;
+            case 5: menuSalas(); break;
+            case 6: menuFunciones(); break;
             case 7: opcionPendiente(3); break;
             case 8: menuListados(); break;
             case 9: menuConsultas(); break;

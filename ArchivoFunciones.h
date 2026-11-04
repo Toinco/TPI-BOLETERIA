@@ -1,6 +1,6 @@
 #ifndef ARCHIVOFUNCIONES_H_INCLUDED
 #define ARCHIVOFUNCIONES_H_INCLUDED
-
+#include "Funcion.h"
 
 class ArchivoFunciones {
 private:
@@ -9,12 +9,14 @@ private:
 public:
     ArchivoFunciones(const char* nombre = "Funciones.dat");
 
+    bool Guardar(Funcion reg);
+    bool Guardar(Funcion reg, int posicion);
+    int Buscar(int idFuncion);
+    Funcion Leer(int posicion);
+    int CantidadRegistros();
 
-    bool grabar(Funcion reg);
-    bool listarRegistros();
 
-
-    bool haySuperposicion(Funcion regNueva, int duracionPelicula);
+    bool haySuperposicion(Funcion regNueva, int duracionNueva, int idIgnorar = 0);
 };
 
 #endif // ARCHIVOFUNCIONES_H_INCLUDED
