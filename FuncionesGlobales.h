@@ -28,4 +28,11 @@ void lineaDoble();
 void lineaSimple();
 void titulo(const char *texto);
 
+
+
+int butacasDisponibles(int idFuncion);
+float precioDeFuncion(int idFuncion);
+
+
+
 #endif // FUNCIONESGLOBALES_H_INCLUDED

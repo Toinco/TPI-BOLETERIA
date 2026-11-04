@@ -29,6 +29,7 @@ void mostrarNombreGenero(int idGenero);
 /// Integridad para las bajas
 bool directorTienePeliculasActivas(int idDirector);
 bool generoTienePeliculasActivas(int idGenero);
+bool peliculaTieneFuncionesFuturas(int idPelicula);
 
 /// Bloque 2: salas y funciones
 bool existeSalaActiva(int idSala);

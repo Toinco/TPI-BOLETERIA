@@ -6,6 +6,12 @@
 using namespace std;
 
 #include "FuncionesGlobales.h"
+#include "ArchivoFunciones.h"
+#include "ArchivoSalas.h"
+#include "ArchivoPrecios.h"
+#include "Funcion.h"
+#include "Sala.h"
+#include "Precio.h"
 
 void cargarCadena(char *pal, int tam){
     int i;
@@ -178,3 +184,57 @@ void titulo(const char *texto){
     cout<<"          "<<texto<<endl;
     lineaDoble();
 }
+///-------
+// Calcula cuántas butacas libres quedan para una función específica
+int butacasDisponibles(int idFuncion) {
+    ArchivoFunciones archFunciones("Funciones.dat");
+    int posFunc = archFunciones.Buscar(idFuncion);
+    if (posFunc == -1) return 0;
+
+    Funcion func = archFunciones.Leer(posFunc);
+
+    ArchivoSalas archSalas("Salas.dat");
+    int posSala = archSalas.Buscar(func.getIdSala());
+    if (posSala == -1) return 0;
+
+    Sala sala = archSalas.Leer(posSala);
+    int capacidadTotal = sala.getCapacidad();
+
+    int entradasVendidas = 0;
+
+    return capacidadTotal - entradasVendidas;
+}
+
+// Devuelve el precio correspondiente para una función
+float precioDeFuncion(int idFuncion) {
+    ArchivoFunciones archFunciones("Funciones.dat");
+    int posFunc = archFunciones.Buscar(idFuncion);
+    if (posFunc == -1) return 0;
+
+    Funcion func = archFunciones.Leer(posFunc);
+
+    ArchivoSalas archSalas("Salas.dat");
+    int posSala = archSalas.Buscar(func.getIdSala());
+    if (posSala == -1) return 0;
+
+    Sala sala = archSalas.Leer(posSala);
+    int tipoSala = sala.getTipo();
+
+    ArchivoPrecios archPrecios("Precios.dat");
+    int cantPrecios = archPrecios.CantidadRegistros();
+
+    for (int i = 0; i < cantPrecios; i++) {
+        Precio p = archPrecios.Leer(i);
+        if (p.getIdTipo() == tipoSala) {
+    return p.getPrecio();
+}
+    }
+
+    return 0;
+}
+
+
+
+
+
+

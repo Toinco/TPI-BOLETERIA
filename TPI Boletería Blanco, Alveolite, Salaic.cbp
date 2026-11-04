@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="ArchivoDirectores.cpp" />
 		<Unit filename="ArchivoDirectores.h" />
+		<Unit filename="ArchivoFunciones.cpp" />
+		<Unit filename="ArchivoFunciones.h" />
 		<Unit filename="ArchivoGeneros.cpp" />
 		<Unit filename="ArchivoGeneros.h" />
 		<Unit filename="ArchivoPeliculas.cpp" />
@@ -42,6 +44,8 @@
 		<Unit filename="ArchivoPeliculasxGenero.h" />
 		<Unit filename="ArchivoPrecios.cpp" />
 		<Unit filename="ArchivoPrecios.h" />
+		<Unit filename="ArchivoSalas.cpp" />
+		<Unit filename="ArchivoSalas.h" />
 		<Unit filename="Director.cpp" />
 		<Unit filename="Director.h" />
 		<Unit filename="Fecha.cpp" />
@@ -66,6 +70,8 @@
 		<Unit filename="MenuPeliculas.h" />
 		<Unit filename="MenuPrecios.cpp" />
 		<Unit filename="MenuPrecios.h" />
+		<Unit filename="MenuSalas.cpp" />
+		<Unit filename="MenuSalas.h" />
 		<Unit filename="Pelicula.cpp" />
 		<Unit filename="Pelicula.h" />
 		<Unit filename="PeliculaxGenero.cpp" />

@@ -258,7 +258,7 @@
 	"Director.h"
 	"FuncionesGlobales.h"
 
-1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\funcionesglobales.h
+1793808175 c:\users\felipe guillermo\documents\github\tpi-boleteria\funcionesglobales.h
 
 1793305210 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\fecha.cpp
 	<iostream>
@@ -267,11 +267,12 @@
 
 1793305166 c:\users\felipe guillermo\documents\github\tpi-boleteria\fecha.h
 
-1793304017 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\funcion.cpp
+1793801728 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\funcion.cpp
 	<iostream>
 	"Funcion.h"
 	"FuncionesGlobales.h"
 	"Validaciones.h"
+	"ArchivoSalas.h"
 
 1793302838 c:\users\felipe guillermo\documents\github\tpi-boleteria\funcion.h
 	"Fecha.h"
@@ -279,14 +280,21 @@
 
 1793285389 c:\users\felipe guillermo\documents\github\tpi-boleteria\horario.h
 
-1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\validaciones.h
+1793809188 c:\users\felipe guillermo\documents\github\tpi-boleteria\validaciones.h
+	"Funcion.h"
 
-1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\funcionesglobales.cpp
+1793809188 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\funcionesglobales.cpp
 	<iostream>
 	<cstdio>
 	<cstring>
 	<cstdlib>
 	"FuncionesGlobales.h"
+	"ArchivoFunciones.h"
+	"ArchivoSalas.h"
+	"ArchivoPrecios.h"
+	"Funcion.h"
+	"Sala.h"
+	"Precio.h"
 
 1793186793 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\genero.cpp
 	<iostream>
@@ -313,7 +321,7 @@
 	"Pelicula.h"
 	"Director.h"
 
-1793635610 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\main.cpp
+1793801743 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\main.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
@@ -324,6 +332,8 @@
 	"ListadosYConsultas.h"
 	"MenuConfiguracion.h"
 	"MenuPrecios.h"
+	"MenuSalas.h"
+	"MenuFunciones.h"
 
 1793186793 c:\users\felipe guillermo\documents\github\tpi-boleteria\menupeliculas.h
 
@@ -397,12 +407,56 @@
 	<cstring>
 	"Precio.h"
 
-1793186792 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\validaciones.cpp
+1793801680 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\validaciones.cpp
 	<iostream>
+	"ArchivoSalas.h"
+	"ArchivoFunciones.h"
 	"Validaciones.h"
 	"FuncionesGlobales.h"
 	"ArchivoPeliculas.h"
 	"ArchivoDirectores.h"
 	"ArchivoGeneros.h"
 	"ArchivoPeliculasxGenero.h"
+	<ctime>
+
+1793808471 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivofunciones.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	"ArchivoFunciones.h"
+	"ArchivoPeliculas.h"
+
+1793808471 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivofunciones.h
+	"Funcion.h"
+
+1793809082 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\archivosalas.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+	"ArchivoSalas.h"
+	"Sala.h"
+
+1793809040 c:\users\felipe guillermo\documents\github\tpi-boleteria\archivosalas.h
+	"Sala.h"
+
+1793742343 c:\users\felipe guillermo\documents\github\tpi-boleteria\sala.h
+
+1793801443 c:\users\felipe guillermo\documents\github\tpi-boleteria\menusalas.h
+
+1793808471 c:\users\felipe guillermo\documents\github\tpi-boleteria\menufunciones.h
+
+1793801594 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\menusalas.cpp
+	<iostream>
+	<iostream>
+	"MenuSalas.h"
+	"FuncionesGlobales.h"
+	"Validaciones.h"
+	"ArchivoSalas.h"
+	<cstdlib>
+
+1793800998 source:c:\users\felipe guillermo\documents\github\tpi-boleteria\sala.cpp
+	<iostream>
+	<cstring>
+	"Sala.h"
+	"FuncionesGlobales.h"
 
