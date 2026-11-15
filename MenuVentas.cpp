@@ -60,7 +60,6 @@ void menuVentas(){
         }
     }
 }
-
 void mostrarComprobante(venta reg){
     ArchivoFunciones archF;
     int posF = archF.Buscar(reg.getIdFuncion());
@@ -86,9 +85,9 @@ void mostrarComprobante(venta reg){
         f.getHorario().mostrar();
         cout<<endl;
     }
-    cout<<"ENTRADAS: "<<reg.getCantidad()<<endl;
-    cout<<"PRECIO:   $"<<reg.getPrecioUnitario()<<endl;
-    cout<<"  TOTAL:    $"<<reg.getImporte()<<endl;
+    cout<<"  ENTRADAS: "<<reg.getCantidad()<<endl;
+    cout<<"  PRECIO:   $"<<(int)(reg.getPrecioUnitario() + 0.5f)<<endl;
+    cout<<"  TOTAL:    $"<<(int)(reg.getImporte() + 0.5f)<<endl;
     cout<<"  FORMA DE PAGO :     "<<nombreFormaPago(reg.getFormaPago())<<endl;
     cout<<"  Fecha de venta: ";
     reg.getFecha().mostrar();
@@ -97,9 +96,10 @@ void mostrarComprobante(venta reg){
     lineaDoble();
 }
 
+
 void recaudacionAnual(){
     titulo("RECAUDACION ANUAL");
-    int anio = leerEntero("INGRESE AÑO: ");
+    int anio = leerEntero("INGRESE ANIO: ");
     while(anio<1900 || anio>2100){
         cout<<"  Anio invalido."<<endl;
         anio = leerEntero("ANIO: ");
@@ -118,12 +118,21 @@ void recaudacionAnual(){
             meses[v.getFecha().getMes() - 1] += v.getImporte();
         }
     }
+
     cout<<"MES                    RECAUDACION"<<endl;
     for(int i=0;i<12;i++){
-    cout<<mesesTexto[i]<<"        "<<"$"<<meses[i]<<endl;
+        cout<<mesesTexto[i];
+        int largo = 0;
+        while(mesesTexto[i][largo] != '\0') {
+            largo++; //cuenta el largo de la letra
+        }
+        for(int j=largo;j<23;j++){ //hasta que llegue a 23 que es el largo de la columna imprime " "
+            cout<<" ";
+        }
+        cout<<"$"<<(long long)(meses[i] + 0.5f)<<endl;
     }
     lineaDoble();
-    cout<<"TOTAL DEL AÑO "<<anio<<": $"<<total<<endl;
+    cout<<"TOTAL DEL ANIO "<<anio<<":   $"<<(long long)(total + 0.5f)<<endl;
     system("pause");
 }
 
@@ -403,7 +412,7 @@ int pedirIdFuncionVendible(){
         int id = leerEntero("ID DE FUNCION (0 = CANCELAR): ");
         if(id==0) {
             return 0;
-        } 
+        }
         int pos = archivo.Buscar(id);
         if(pos==-1){
             cout<<"  Esa funcion no existe."<<endl;
@@ -514,8 +523,8 @@ Fecha fechaActual(){
 
     Fecha f;
     f.setDia(ahora->tm_mday);
-    f.setMes(ahora->tm_mon + 1);       
-    f.setAnio(ahora->tm_year + 1900);  
+    f.setMes(ahora->tm_mon + 1);
+    f.setAnio(ahora->tm_year + 1900);
     return f;
 }
 
